@@ -7,7 +7,7 @@ const BANNED_WARNING =
 const NONE_SELECTED = 0;
 
 // Initialize variables
-let customers = 1;
+const customers = 1;
 const location = "RSA"; // Change this to the actual location
 let currency = null;
 let shipping = null;
