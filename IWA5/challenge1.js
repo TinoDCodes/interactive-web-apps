@@ -8,7 +8,7 @@ const NONE_SELECTED = 0;
 
 // Initialize variables
 const customers = 1;
-const location = "RSA"; // Change this to the actual location
+const location = "RSA";
 let currency = null;
 let shipping = null;
 
@@ -16,12 +16,9 @@ let shipping = null;
 if (location === "RSA") {
   shipping = 400;
   currency = "R";
-} else if (location === "NAM") {
-  shipping = 600;
-  currency = "$";
 } else {
-  shipping = 800;
   currency = "$";
+  shipping = location === "NAM" ? 600 : 800;
 }
 
 // Calculate costs for different items
@@ -31,7 +28,7 @@ const shirts = 150 * NONE_SELECTED;
 const batteries = 35 * 2;
 const pens = 5 * NONE_SELECTED;
 
-// Calculate total cost
+// Calculate total cost of items (excl. shipping)
 const cost = shoes + toys + shirts + batteries + pens;
 
 // Apply free shipping condition
