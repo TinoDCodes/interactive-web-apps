@@ -90,3 +90,5 @@ book3.checkout.disabled = STATUS_MAP[`${book3.status.innerText}`].canCheckout
 book3.checkin.disabled = STATUS_MAP[`${book3.status.innerText}`].canCheckIn
   ? false
   : true;
+
+//---------------------...ooo000 END OF FILE 000ooo...------------------------//
